@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    border-bottom: 1px solid red;
+    border-left: 10px solid yellow;
+}
+
+h1:hover {
+    color: red;
+    font-size: 50px;
+}
+
+h1:active {
+    color: orange;
+}
