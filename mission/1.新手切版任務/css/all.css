@@ -55,7 +55,9 @@ body {
     font-size: 24px;
     line-height: 36px;
 }
-/* 先寫工具 Class 名稱，可以減少重複的工作（先觀察規律） */
+/* 2021.06.03 從老師的講解影片發現：
+可以先觀察規律，若有重複的 CSS 特性可以先寫起來 */
+/* 先寫工具 Class 名稱，可以減少重複的工作 */
 /* command + D 可以選取多個內容 */
 .mt-1 {
     margin-top: 8px;
@@ -75,64 +77,83 @@ body {
 .mb-4 {
     margin-bottom: 32px;
 }
+.mb-5 {
+    margin-bottom: 40px;
+}
 .mb-6 {
     margin-bottom: 48px;
 }
 .mb-9 {
     margin-bottom: 72px;
 }
-.mb-5 {
-    margin-bottom: 40px;
+/* 1. 容器 ============================================ */
+/* 容器，觀察可以發現。四個區塊都有 container 屬性 */
+/* 設置寬度與水平置中 */
+.container {
+    width: 1200px;
+    margin: 0 auto ;
 }
+/* 2.標題、次標題(個人資料、學歷、工作經驗、技能、聯絡區) ============================================ */
+/* 標題 */
 .title {
     font-size: 80px;
     line-height: 94px;
     padding-bottom: 16px;
     border-bottom: 3px solid #000;
 }
-.container {
-    width: 1200px;
-    margin: 0 auto ;
-}
-.subTitle {
+/* 次標題設定 fz, lh, bb, pb */
+.subtitle {
     font-size: 32px;
     line-height: 45px;
     border-bottom: 1px solid #000;
     padding-bottom: 8px;
 }
-.subTitle span {
+/* 次標題右邊文字 */
+.subtitle span {
     color: #A00404;
     padding-left: 16px;
     font-size: 24px;
 }
-.subTitle-white {
+/* 次標題白色款 */
+.subtitle-white {
     text-align: center;
     border-bottom: 1px solid #fff;
 }
-.subTitle-white span{
+/* 次標題白色款右邊文字 */
+.subtitle-white span{
     color: #fff;
 }
+/* 3. 工作技能區 ============================================ */
+/* 背景 */
 .darkBlue {
     background: #415165;
     color: #fff;
 }
+/* 寬度 996px(XD 看到的 magic number) */
 .skills {
     width: 996px;
+    /* margin 0 auto 自動置中 */
     margin: 0 auto;
     padding-bottom: 16px;
 }
+/* 技能共同屬性 */
+/* 寬度 230 px = 24(padding-left) + 188(字體寬度) + 18(老師自己抓的些微留白)*/
 .skills-content {
     width: 230px;
     margin: 0 auto;
     padding-left: 24px;
     border-left: 1px solid #96A9C4;
 }
+/* 技能的 list */
 .skills-content li {
     margin-bottom: 20px;
 }
+/* 4. 聯絡區 ============================================ */
+/* 內推 */
 .footer {
     padding-bottom: 20px;
 }
+/* 文字置中 */
 .method {
     text-align: center;
 }
