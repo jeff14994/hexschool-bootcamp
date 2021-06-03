@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,78 +14,81 @@
 
     <!-- h2.subTitle>{個人資料}+span{PROFILE} -->
     <!-- <h2 class="subTitle">個人資料<span>PROFILE</span></h2> -->
-    <div class="containter">
-        <h1 class="title">Joanna<br>Chen</h1>
-        <img src="image/photo.png" alt="">
-        <div class="profile">
-            <h2 class="subTitle">個人資料<span>PROFILE</span></h2>
+    <div class="container">
+        <h1 class="title mb-6">Joanna<br>Chen</h1>
+        <img src="image/photo.png" class="block mb-6"alt="">
+        <div class="profile mb-9">
+            <!-- 若 margin 重疊，較長的會被取 -->
+            <h2 class="subTitle mb-2">個人資料<span>PROFILE</span></h2>
             <ul>
-                <li>陳久安 Joanne Chen<br>1997- <br>應屆畢業生／接案設計師／UI 設計實習生</li>
-                <li>UI 設計修行中／立志當斜槓青年<br> 獨立接案，內容涵蓋：<br> 品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</li>
+                <li class="mb-3">陳久安 Joanne Chen<br>1997- <br>應屆畢業生／接案設計師／UI 設計實習生</li>
+                <li class="mb-3">UI 設計修行中／立志當斜槓青年<br> 獨立接案，內容涵蓋：<br> 品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</li>
             </ul>
         </div>
-        <div class="education">
-            <h2 class="subTitle">學歷<span>EDUCATION</span></h2>
+        <div class="education mb-9">
+            <h2 class="subTitle mb-2">學歷<span>EDUCATION</span></h2>
             <ul>
-                <li>國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</li>
-                <li>國立六腳高級中學 美術班 | 2013－2016</li>
+                <li class="mb-3">國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</li>
+                <li class="mb-3">國立六腳高級中學 美術班 | 2013－2016</li>
             </ul>
         </div>
     </div>
-    <div class="darkBlue">
+    <div class="darkBlue pt-3 mb-9">
         <!-- .subTitle.subTitle-white -->
-        <h2 class="subTitle subTitle-white">
-            技能<span>SKILL</span>
-        </h2>
-        <ul class="skills-content">
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe XD</li>
-            <li>Adobe Indesign</li>
-            <li>C4D</li>
-            <li>Adobe Premiere</li>
-            <li>語言：中文、英文</li>
-        </ul>
+        <div class="skills">
+            <h2 class="subTitle subTitle-white mb-5">
+                技能<span>SKILL</span>
+            </h2>
+            <ul class="skills-content">
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe XD</li>
+                <li>Adobe Indesign</li>
+                <li>C4D</li>
+                <li>Adobe Premiere</li>
+                <li>語言：中文、英文</li>
+            </ul>
+        </div> 
     </div>
-    <div class="conatiner work">
-        <h2 class="subTitle">工作經驗<span>WORK EXPERIENCE</span></h2>
+    <div class="container work">
+        <h2 class="subTitle mb-2">工作經驗<span>WORK EXPERIENCE</span></h2>
         <!-- ul>li*5>h3 -->
         <ul>
-            <li>
+            <li class="mb-3">
                 <h3>六角學院 視覺設計實習生 | 2019/07－2020/06</h3>
-                <img src="image/Group 1.svg" width="90" alt="六角學院 LOGO">
+                <img class="block mt-1 mb-1"src="image/Group 1.svg" width="90" alt="六角學院 LOGO">
                 <p>在六角學院長達一年的實習中，前期藉由公司課程掌握 HTML, CSS, Adobe XD，設計給學員使用的名片設計教材，並參與六角週年活動，設計各式周邊商品及活動網路宣傳圖。後期進入 UI 設計範疇，設計六角共筆部落格 - W3HexSchool、六角發案服務網介面設計、供給學員的教 案- RWD官方網站設計，並設計各式網頁活動宣傳圖。</p>
             </li>
-            <li>
+            <li class="mb-3">
                 <h3>獨立接案 Hao Jun 酒標設計 | 2019</h3>
             </li>
-            <li>
+            <li class="mb-3">
                 <h3>獨立接案 Exulans 酒標設計 | 2019</h3>
             </li>
-            <li>
+            <li class="mb-3">
                 <h3>獨立接案 桃園平鎮市民健走活動提案 | 2019</h3>
             </li>
-            <li>
+            <li class="mb-3">
                 <h3>Simtree 興趣咖啡 工讀生 | 2018－2019</h3>
-                <img src="image/simtree.png" alt="">
+                <img class="block mt-1 mb-1" src="image/simtree.png" alt="">
                 <p>擔任外場及吧台服務生，學習咖啡相關知識。</p>
             </li>
         </ul>
     </div>
-    <div class="darkBlue">
+    <div class="darkBlue pt-3">
         <div class="container footer">
-            <h2 class="subTitle subTitle-white">
+            <h2 class="subTitle subTitle-white mb-4">
                 聯絡方式<span>CONTACT METHOD</span>
             </h2>
             <ul class="method">
-                <li>Mail：xxxd@hexschool.com</li>
-                <li>Phone：0910123456</li>
-                <li>Kaohsiung, Taiwan</li>
-                <li>作品連結：https://www.behance.net/xxxdddddd</li>
-                <li>
-                    <img src="image/facebook.svg" alt="">
-                    <img src="image/instagram-alt.svg" alt="">
-                    <img src="image/line.svg" alt="">
+                <li class="mb-2">Mail：xxxd@hexschool.com</li>
+                <li class="mb-2">Phone：0910123456</li>
+                <li class="mb-2">Kaohsiung, Taiwan</li>
+                <li class="mb-2">作品連結：https://www.behance.net/xxxdddddd</li>
+                <li class="mb-2">
+                    <img src="image/facebook.svg" alt="facebook LOGO">
+                    <img src="image/instagram-alt.svg" alt="instagram LOGO">
+                    <img src="image/line.svg" alt="line LOGO">
                 </li>
             </ul>
         </div>
