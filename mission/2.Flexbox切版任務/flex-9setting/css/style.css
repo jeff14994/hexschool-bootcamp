@@ -47,8 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
-
 .wrap{
     margin: 0 auto;
     width: 800px;
@@ -64,4 +62,66 @@ table {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+/* Reset */
+.wrap {
+	margin: 0 auto;
+	width: 1024px;
+}
+.header {
+	margin-bottom: 30px;
+	position: relative;
+}
+.content {
+	margin-bottom: 20px;
+}
+.course {
+	display: flex;
+	justify-content: space-around;
+}
+.text-block {
+	position: absolute;
+	text-align: center;
+	/* 可以只設定背景顏色的透明度 */
+	/* opacity: 0.2; */
+	background-color: rgba(33, 33, 33, 0.2);
+	color: white;
+	width: 972px;
+	text-align: left;
+	font-size: 44px;
+    bottom: 100px;
+	padding: 30px 0px 30px 30px
+}
+.course-item {
+	border-right: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-bottom-left-radius: .25rem;
+	border-bottom-right-radius: 0.25rem;
+	text-align: center;
+	box-shadow:  0 4px 2px -2px  #cccccc;
+	width: 300px;
+	/* padding format: top left-right bottom */
+	padding: 0px 15px 15px;
+}
+.course-item h2 {
+	font-size: 25px;
+	margin-bottom: 8px;
+}
+/* 設定 image 高度。這邊直接寫死，否則會不等高 */
+.course-item img {
+	display: block;
+	margin: 0 auto;
+	height: 100px;
+	margin-bottom: 16px;
+}
+.course-item p {
+	text-align: left;
+}
+.footer {
+	background: gray;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
