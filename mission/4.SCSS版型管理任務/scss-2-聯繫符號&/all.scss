@@ -1,0 +1,13 @@
+.header {
+    height: 500px;
+    .logo {
+        background: #000;
+        a {
+            color: #000;
+            &:hover {
+                color: pink;
+                text-decoration: none;
+            }
+        }
+    }
+}

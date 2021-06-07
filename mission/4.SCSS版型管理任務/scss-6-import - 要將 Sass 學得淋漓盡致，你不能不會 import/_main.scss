@@ -1,0 +1,17 @@
+body {
+    font-family: $font-family-base;
+}
+.header a {
+    width: 500px;
+    color: $link-color;
+    font-size: $font-m;
+}
+.header h1 {
+    font-size: $font-l;
+}
+.content h2 {
+    font-family: $font-family-title;
+}
+.footer {
+    color: $link-color;
+}

@@ -1,0 +1,18 @@
+$base-color: #008000;
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.box1 {
+    background: $base-color;
+}
+.box2 {
+    //   變暗 20%
+    background: darken($base-color, 20%);
+}
+.box3 {
+    //  變亮 30%
+    background: lighten($base-color, 30%);
+}

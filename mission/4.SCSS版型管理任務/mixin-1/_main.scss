@@ -1,0 +1,17 @@
+
+.header h1 {
+    background: url('../logo.png');
+    @include hide-text;
+}
+// $red: #ff0000;
+// .box {
+//     font-size: 18px;
+// }
+// @mixin blueSize {
+//     color: blue;
+//     font-size: 98px;
+// }
+// .header h1 {
+//     background: #000;
+//     @include blueSize;
+// }

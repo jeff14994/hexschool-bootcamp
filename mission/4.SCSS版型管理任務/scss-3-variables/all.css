@@ -1,0 +1,22 @@
+body {
+  font-family: "Helvetica, Arial, sans-serif";
+}
+
+.header a {
+  width: 500px;
+  color: #ff0000;
+  font-size: 13px;
+}
+
+.header h1 {
+  font-size: 18px;
+}
+
+.content h2 {
+  font-family: "monospace";
+}
+
+.footer {
+  color: #ff0000;
+}
+/*# sourceMappingURL=all.css.map */

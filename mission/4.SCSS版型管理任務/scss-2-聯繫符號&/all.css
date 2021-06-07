@@ -1,0 +1,17 @@
+.header {
+  height: 500px;
+}
+
+.header .logo {
+  background: #000;
+}
+
+.header .logo a {
+  color: #000;
+}
+
+.header .logo a:hover {
+  color: pink;
+  text-decoration: none;
+}
+/*# sourceMappingURL=all.css.map */

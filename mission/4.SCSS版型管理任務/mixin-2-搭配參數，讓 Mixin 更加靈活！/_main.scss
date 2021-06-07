@@ -1,0 +1,38 @@
+
+.header h1 {
+    background: url('../logo.png');
+    @include hide-text;
+}
+
+@mixin color($color, $font-size) {
+    color: $color;
+    border: 5px solid $color;
+    text-decoration: $color;
+    font-size: $font-size * 1.5;
+}
+.box1 {
+    @include color(#fff, 16px);
+}
+.box2 {
+    @include color(#000, 100px);
+}
+
+@mixin pad {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+@mixin mobile {
+    @media (max-width: 568px) {
+        @content
+    }
+}
+.content {
+    width: 200px;
+    @include pad {
+        font-size: 40px;
+    }
+    @include mobile {
+        font-size: 30px;
+    }
+}

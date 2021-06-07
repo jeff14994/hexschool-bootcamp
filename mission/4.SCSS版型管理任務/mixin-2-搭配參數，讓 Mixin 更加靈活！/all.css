@@ -1,0 +1,39 @@
+.header h1 {
+  background: url("../logo.png");
+  text-indent: 110%;
+  word-spacing: nowrap;
+  overflow: hidden;
+}
+
+.box1 {
+  color: #fff;
+  border: 5px solid #fff;
+  -webkit-text-decoration: #fff;
+          text-decoration: #fff;
+  font-size: 24px;
+}
+
+.box2 {
+  color: #000;
+  border: 5px solid #000;
+  -webkit-text-decoration: #000;
+          text-decoration: #000;
+  font-size: 150px;
+}
+
+.content {
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 568px) {
+  .content {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=all.css.map */
