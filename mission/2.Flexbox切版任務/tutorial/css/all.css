@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Reset end */
+html {
+    color: #3F5D45;
+}
+a {
+    color: #3F5D45;
+    text-decoration: none;
+}
+body {
+    font-family: PingFang TC;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* emmet: aic */
+    align-items: center;
+}
+.menu {
+    display: flex;
+}
+.menu a {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.menu a:hover {
+    background: #3F5D45;
+    color: #fff;
+}
+.banner {
+    margin-bottom: 60px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.aside {
+    width: 300px;
+}
+.aside h2 {
+    background: #3F5D45;
+    color: #fff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 24px;
+
+}
+/* 避免多出 1px */
+.aside li {
+    margin-bottom: -1px;
+}
+.aside li a {
+    /* 若只有一行 */
+    line-height: 65px;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    /* emmet: bd */
+    border: 1px solid #EAF0ED;
+}
+.aside li a:hover {
+    background: #EAF0ED;
+}
+/* 產品欄位 */
+.productList {
+    width: 620px;
+}
+.productList-card {
+    display: flex;
+    justify-content: space-between;
+    /* emmet: fxww -> wrap, fxw -> nowrap*/
+    flex-wrap: wrap;
+}
+.productList-card li {
+    width: 300px;
+    position: relative;
+}
+.productList-card .tag {
+    position: absolute;
+    background: #3F5D45;
+    color: #fff;
+    padding: 10px;
+    /* tag location in the image */
+    left: 20px;
+    top: 0;
+    /* 字與字之間的間距 */
+    letter-spacing: 5px;
+    /* 從上到下，lr -> left2right */
+    writing-mode: vertical-lr;
+}
+.productList-card .heart {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    font-size: 20px;
+}
+/*  商品顯示*/
+.productList-card .productList-card-body {
+    border-bottom: 1px solid #EAF0ED;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    line-height: 65px;
+    font-size: 20px;
+    /* 文字並排在一起 */
+    display: flex;
+}
+.productList-card .productList-card-body h2 {
+    /* 文字 */
+    width: 173px;
+    text-align: center;
+    border-right: 1px solid #EAF0ED;
+}
+.productList-card .productList-card-body span {
+    /* 價錢 */
+    width: 127px;
+    text-align: center;
+}
+.productList-card .productList-card-cart {
+    background: #EAF0ED;
+    line-height: 65px;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* 分頁 */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+.pagination-list {
+    display: flex;
+}
+
+.pagination-list a {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    border: 1px solid #EFF0ED;
+}
+
+.pagination-list a:hover {
+    background: #3F5D45;
+    color: #fff;
+}
+.mt-1 {
+    margin-top: 10px;
+}
