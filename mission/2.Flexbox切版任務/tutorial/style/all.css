@@ -46,4 +46,22 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 /* Reset end */
+html {
+    color: #3F5D45;
+}
+a {
+    color: #3F5D45;
+    text-decoration: none;
+}
+body {
+    font-family: PingFang TC;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
