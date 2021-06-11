@@ -71,6 +71,9 @@ body {
 .pt-3 {
     padding-top: 24px;
 }
+.mr-3 {
+    margin-right: 24px;
+}
 .mb-3 {
     margin-bottom: 24px;
 }
@@ -86,6 +89,7 @@ body {
 .mb-9 {
     margin-bottom: 72px;
 }
+
 /* 1. 容器 ============================================ */
 /* 容器，觀察可以發現。四個區塊都有 container 屬性 */
 /* 設置寬度與水平置中 */
@@ -129,6 +133,13 @@ body {
     background: #415165;
     color: #fff;
 }
+.work li p {
+    font-size: 20px;
+}
+.work ul {
+    border-left: 1px solid #96A9C4;
+    padding-left: 24px;
+}
 /* 寬度 996px(XD 看到的 magic number) */
 .skills {
     width: 996px;
@@ -156,4 +167,8 @@ body {
 /* 文字置中 */
 .method {
     text-align: center;
+}
+.footer ul li a {
+    text-decoration: none;
+    color: white;
 }
