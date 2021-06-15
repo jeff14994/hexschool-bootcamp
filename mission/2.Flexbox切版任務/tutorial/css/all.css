@@ -61,10 +61,12 @@ a {
 body {
     font-family: PingFang TC;
 }
+/* 容器 */
 .container {
     width: 940px;
     margin: 0 auto;
 }
+/* 1. 網頁 Header ============================================ */
 .header {
     display: flex;
     justify-content: space-between;
@@ -90,6 +92,7 @@ body {
 .banner {
     margin-bottom: 60px;
 }
+/* 2. 主要 ============================================ */
 .main {
     display: flex;
     justify-content: space-between;
@@ -121,7 +124,7 @@ body {
 .aside li a:hover {
     background: #EAF0ED;
 }
-/* 產品欄位 */
+/* 3. 產品欄位 ============================================ */
 .productList {
     width: 620px;
 }
@@ -184,7 +187,7 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
-/* 分頁 */
+/* 4.分頁  ============================================ */
 .pagination {
     display: flex;
     justify-content: flex-end;
