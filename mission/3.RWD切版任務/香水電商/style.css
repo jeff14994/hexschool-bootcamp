@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+/* 固定值響應式必寫語法 */
+*,*:after,*:before {
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Reset end */
+/* 同時考慮電腦版與手機版的留白 */
+/* 使用 container 一同管理 => 用來居中 */
+.mb-7 {
+    margin-bottom: 60px;
+}
+.container {
+    /* 電腦版：555*2(image width) + 15*2(手機留白) */
+    max-width: 1140px;
+    /* 手機的左右留白 */
+    padding-right: 15px;
+    padding-left: 15px;
+    /* 上下 0, 左右自適應 */
+    margin: 0 auto;
+    /* border: 1px solid #000;; */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+}
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+/* 電腦版時 em 消失 */
+.header .menu em {
+    display: none;
+}
+.header .menu a {
+    display: block;
+    padding: 5px;
+    position: relative;
+}
+.header .menu i {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    /* align-items: center; */
+}
+/* 手機版時 em 出現 */
+@media(max-width: 768px){
+    .header .menu span {
+        display: none;
+    }
+    .header .menu em {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: red;
+        color: #fff;
+        border-radius: 7px;
+        width: 16px;
+        height: 13px;
+        text-align: center;
+        /* line-height: 20px; */
+        font-size: 12px;
+        font-style: SF Pro Text;
+    }
+    /* 其他欄位隱藏 */
+    .m-none {
+        display: none;
+    }
+}
+.banner {
+    
+    position: relative;
+    /* max-width: 1920px; */
+    background: url(images/index1.jpg);
+    /* 不要寫死高度 */
+    /* 100vh - 56px 的 -56px 代表減掉 header 的 height */
+    /* 100vh 代表目前畫面視角 */
+    /* calc() 幫你計算螢幕解析度 */
+    height: calc(100vh - 56px);
+    background-size: cover;
+    background-position: center center; 
+}
+.banner .selector {
+    position: absolute; 
+    /* width: 445px; */
+    top: 50%;
+    right: 50%;
+    /* left: 1070px;
+    top: 295px; */
+}
+.product__top-row {
+    display: flex;
+}
+.product__top--row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.product__top-img img {
+    width: 555px;
+    height: 555px;
+}
+.product__top-content {
+    width: 555px;
+}
+.product__top-content h2 {
+    font-size: 32px;
+    font-family: SF Pro Text;
+}
+
+@media(max-width: 768px){
+    .product__top--row-reverse {
+        flex-direction: column;
+    }
+    /* 設定寬度 */
+    .product__top-content {
+        width: 345px;
+    }
+    .product__top-row {
+        flex-direction: column;
+    }
+}
+.gray {
+    background-color: #E0E0E0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.gallary {
+    display: flex;
+}
+.gallary img {
+    width: 350px;
+    height: 540px;
+    /* TODO: 我有看到 29px 與 30px，要選哪一個？還是個別寫？ */
+    margin-right: 30px;
+}
+@media(max-width: 768px){
+    .gallary {
+        flex-direction: column;
+    }
+    .gallary img {
+        margin-right: 0;
+    }
+}
+.footer {
+    background-color: red;
+    color: #fff;
+}
