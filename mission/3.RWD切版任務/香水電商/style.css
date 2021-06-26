@@ -182,10 +182,17 @@ img {
     margin: auto auto;
 }
 @media(max-width: 768px){
+    .banner {
+        height: 480px;
+        background-size: cover;
+    }
+    /* TODO: 如何設定 position 的位置？ */
     .selector {
         width: 345px;
-        margin: 0 auto;
+        left: 15px;
+        top: 10%;
     }
+
 }
 .product__top-row {
     display: flex;
@@ -213,7 +220,7 @@ img {
 .product__top-content h2 {
     width: 350px;
     font-size: 32px;
-    font-family: SF Pro Text;
+    font-family: "SF Pro Text";
     margin: 0 auto;
     text-align: left;
     font-weight: bold;
@@ -288,9 +295,13 @@ img {
         padding-top: 8px;
         /* border: 1px solid #000; */
     }
+    .product__top-img img {
+        height: 350px;
+        padding-top: 16px;
+    }
     .product__top-content li {
-        margin-bottom: 32px;
-        padding-top: 8px;
+        margin-bottom: 8px;
+        /* border: 1px solid #000; */
     }
     .product__long-content img {
         height: 680px;
