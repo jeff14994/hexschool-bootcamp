@@ -57,6 +57,9 @@ img {
 /* Reset end */
 /* 同時考慮電腦版與手機版的留白 */
 /* 使用 container 一同管理 => 用來居中 */
+.mb-2 {
+    margin-bottom: 16px;
+}
 .mb-7 {
     margin-bottom: 60px;
 }
@@ -66,7 +69,7 @@ img {
     /* 手機的左右留白 */
     padding-right: 15px;
     padding-left: 15px;
-    /* 上下 0, 左右自適應 */
+    /* 元素水平居中 */
     margin: 0 auto;
     /* border: 1px solid #000;; */
 }
@@ -85,16 +88,25 @@ img {
     display: none;
 }
 .header .menu a {
-    display: block;
+    display: flex;
     padding: 5px;
     position: relative;
+    text-decoration: none;
+    color: #8D8D8D;
+    font-size: 20px;
 }
 .header .menu i {
+    display: block;
     height: 20px;
     width: 20px;
     line-height: 20px;
+    margin-right: 3px;
     /* align-items: center; */
 }
+.header .menu span {
+    display: block;
+}
+
 /* 手機版時 em 出現 */
 @media(max-width: 768px){
     .header .menu span {
@@ -120,8 +132,7 @@ img {
         display: none;
     }
 }
-.banner {
-    
+.banner {  
     position: relative;
     /* max-width: 1920px; */
     background: url(images/index1.jpg);
@@ -133,13 +144,48 @@ img {
     background-size: cover;
     background-position: center center; 
 }
-.banner .selector {
+.selector {
     position: absolute; 
-    /* width: 445px; */
-    top: 50%;
-    right: 50%;
+    width: 445px;
+    top: 37%;
+    right: 10%;
     /* left: 1070px;
     top: 295px; */
+}
+.selector h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    font-family: SF Pro Text;
+    line-height: 60px;
+}
+.selector p {
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    font-family: SF Pro Text;
+    line-height: 36px;
+
+}
+.selector a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    /* padding-top: 15px; */
+}
+.selector a p {
+    margin: auto auto;
+}
+@media(max-width: 768px){
+    .selector {
+        width: 345px;
+        margin: 0 auto;
+    }
 }
 .product__top-row {
     display: flex;
@@ -148,18 +194,77 @@ img {
     display: flex;
     flex-direction: row-reverse;
 }
+.product__top-img {
+    /* 使圖片距離為 0 */
+    font-size: 0;
+}
 .product__top-img img {
     width: 555px;
     height: 555px;
 }
 .product__top-content {
     width: 555px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .product__top-content h2 {
+    width: 350px;
     font-size: 32px;
     font-family: SF Pro Text;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: bold;
+    line-height: 48px;
 }
-
+.product__top-content ul {
+    width: 350px;
+    height: 150px;
+    margin: 0 auto;
+}
+.product__top-content li {
+    font-size: 20px;
+    font-family: "蘋方-繁";
+    font-weight: light;
+    margin-bottom: 16px;
+}
+/* 選第二個 li */
+.product__top-content a {
+    color: #AC8A46;
+    font-family: "Semibold";
+    text-decoration: none;
+}
+.product__long-content img {
+    height: 1080px;
+}
+.product__long-content li {
+    font-family: "SF Pro Text";
+    font-family: "Semibold";
+    margin-bottom: 0px;
+    line-height: 24px;
+    font-size: 16px;
+}
+.product__long-content ul > li:nth-child(odd){
+    font-weight: bold;
+    line-height: 36px;
+    font-size: 24px;
+}
+.product__long-content ul > li:nth-last-child(1) {
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.product__long-content a {
+    text-decoration: none;
+    color: #000;
+    margin: 18px auto;
+    /* 父層要設定 line-hight 才有辦法使用 vertical-align */
+    vertical-align: inherit;
+}
 @media(max-width: 768px){
     .product__top--row-reverse {
         flex-direction: column;
@@ -170,6 +275,17 @@ img {
     }
     .product__top-row {
         flex-direction: column;
+    }
+    .product__top-content {
+        padding-top: 8px;
+        /* border: 1px solid #000; */
+    }
+    .product__top-content li {
+        margin-bottom: 32px;
+        padding-top: 8px;
+    }
+    .product__long-content img {
+        height: 680px;
     }
 }
 .gray {
@@ -194,7 +310,32 @@ img {
         margin-right: 0;
     }
 }
+.recycle {
+    display: flex;
+}
+.recycle img {
+    width: 730px;
+    height: 520px;
+    margin-right: 30px;
+}
+@media(max-width: 768px){
+    .recycle {
+        flex-direction: column;
+    }
+    .recycle img {
+        width: 345px;
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+}
 .footer {
-    background-color: red;
-    color: #fff;
+    background: url("images/index10.jpg") center center;
+    height: 600px;
+    background-size: cover;
+    color: #8D8D8D;
+}
+.brown {
+    height: 80px;
+    background-color: #916000;
+    margin-bottom: 0;
 }

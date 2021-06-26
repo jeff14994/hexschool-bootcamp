@@ -6,31 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>香水電商</title>
 </head>
 <body>
-    <!-- <div class="container">
-        <h1>標題</h1>
-    </div> -->
-    <!-- 外層滿版，內層還是居中 -->
-    <!-- <div class="footer">
-        <div class="container">
-            <h1>標題</h1>
-        </div>
-    </div> -->
-
     <div class="container header">
         <!-- 記得 image 要設寬高，不要加 px-->
         <a href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d%E2%80%99Perfume.png" alt="logo" width="128" height="38"></a>
         <ul class="menu">
-            <li class="m-none"><a href="#">選單1</a></li>
-            <li class="m-none"><a href="#">選單2</a></li>
-            <li class="m-none"><a href="#">選單3</a></li>
+            <li class="m-none">
+                <a href="#">
+                    <i class="material-icons">
+                        store
+                    </i>
+                    Product
+                </a>
+            </li>
+            <li class="m-none">
+                <a href="#">
+                    <i class="material-icons">
+                        person
+                    </i>
+                    log in
+                </a>
+            </li>
+            <li class="m-none">
+                <a href="#">
+                    <i class="material-icons">
+                        favorite
+                    </i>
+                    Wishlist
+                </a>
+            </li>
             <!-- span -> 電腦版顯示 -->
             <!-- em -> 手機版顯示 -->
-            <!-- <li><a href="#"><i class="material-icons" style="font-size:20px;">shopping_cart</i><span>選單4(3)</span><em>3</em></a></li> -->
-            <li><a href="#"><i class="fas fa-shopping-cart"></i><span>選單4(3)</span><em>3</em></a></li>
+            <li><a href="#"><i class="material-icons">shopping_cart</i><span>Cart(3)</span><em>3</em></a></li>
+            <!-- <li><a href="#"><i class="fas fa-shopping-cart"></i><span>Cart(3)</span><em>3</em></a></li> -->
         </ul>
     </div>
     <div class="banner mb-7">
@@ -38,12 +49,12 @@
         <div class="selector">
             <h1>Perfume your day</h1>
             <ul>
-                <li>A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.</li>
-                <li><button>Shop now</button></li>
+                <li class="mb-2"><p>A perfume is like a piece of clothing, a message, a way of presenting oneself<br>a costume that according to the<br>person who wears it.</p></li>
+                <li><a href="#"><p>Shop now</p></a></li>
             </ul>
         </div>
     </div>
-    <!-- TODO: mb-7 與 margin: 0 auto 似乎會打架？該如何解決？ -->
+    <!-- TODO: mb-7 與 margin: 0 auto 會打架。該如何解決？ -->
     <div class="container product__top mb-7">
         <ul>
             <li class="product__top-row product__top--row-reverse">
@@ -52,7 +63,7 @@
                     <h2>Gabrielle CHANEL</h2>
                     <ul>
                         <li>全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</li>
-                        <li>查看更多</li>
+                        <li><a href="#">查看更多</a></li>
                     </ul>
                 </div>
             </li>
@@ -62,7 +73,7 @@
                     <h2>Five O’clock Au Gingembre</h2>
                     <ul>
                         <li>生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</li>
-                        <li>查看更多</li>
+                        <li><a href="#">查看更多</a></li>
                     </ul>
                 </div>
             </li>
@@ -72,21 +83,21 @@
                     <h2>CHANEL N°5</h2>
                     <ul>
                         <li>N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</li>
-                        <li>查看更多</li>
+                        <li><a href="#">查看更多</a></li>
                     </ul>
                 </div>
             </li>
             <li class="product__top-row">
-                <div class="product__top-img"><img src="images/index5.jpg" alt="index5"></div>
-                <div class="product__top-content">
+                <div class="product__top-img product__long-content"><img src="images/index5.jpg" alt="index5"></div>
+                <div class="product__top-content product__long-content" style="padding-top: 92px;">
                     <ul>
-                        <li>1. Levels of Preventive Maintenance Compliance</li>
-                        <li>The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</li>
-                        <li>2. Percentage of Planned Maintenance</li>
-                        <li>The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</li>
-                        <li>3. Critical percentage of planned maintenance</li>
-                        <li>Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.</li>
-                        <li>Plan a free online training</li>
+                        <li>1.<br>Levels of Preventive<br>Maintenance Compliance</li>
+                        <li style="margin-bottom: 52px;">The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</li>
+                        <li>2.<br>Percentage of Planned<br>Maintenance</li>
+                        <li style="margin-bottom: 52px;">The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</li>
+                        <li>3.<br>Critical percentage of<br>planned maintenance</li>
+                        <li style="margin-bottom: 60px;">Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.</li>
+                        <li><a href="#">Plan a free online training</a></li>
                     </ul>
                 </div>
             </li>
@@ -112,6 +123,29 @@
                 <li>Tonik</li>
                 <li>NT$1,580</li>
             </ul>
+        </div>
+    </div>
+    <div class="recycle container mb-7">
+        <img src="images/index9.jpg" alt="index9">
+        <ul>
+            <li>Bottle-Recycling</li>
+            <li>Recycle your used empty bottles and be rewarded!</li>
+            <li>For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</li>
+            <li><a href="#"> 查看更多</a></li>
+        </ul>
+    </div>
+    <!-- 外層滿版，內層還是居中 -->
+    <div class="footer">
+        <div class="container">
+            <ul>
+                <li>記得<br>訂閱以獲取更多資訊！</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="brown">
+        <div class="container">
+
         </div>
     </div>
 </body>
