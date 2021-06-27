@@ -78,3 +78,29 @@
         margin-bottom: 30.65px;
     }
 }
+/* ================== Section 4 ==================*/
+.pagination {
+    margin-top: 20.65px;
+    height: 30px;
+    margin-bottom: 60px;
+}
+.pagination ul {
+    display: flex;
+    justify-content: center;
+}
+.pagination li {
+    font-size: 19px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.pagination .selected {
+    text-decoration: underline;
+    color: #AC8A46;
+}
+@media(max-width: 768px){
+    .pagination {
+        margin-top: 0;
+        height: 30px;
+        margin-bottom: 40px;
+    } 
+}
