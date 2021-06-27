@@ -73,6 +73,7 @@ img {
     margin: 0 auto;
     /* border: 1px solid #000;; */
 }
+/* ================== Section 1 ==================*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -132,6 +133,7 @@ img {
         display: none;
     }
 }
+/* ================== Section 2 ==================*/
 .banner {  
     position: relative;
     /* max-width: 1920px; */
@@ -156,7 +158,7 @@ img {
     font-size: 40px;
     font-weight: bold;
     color: #fff;
-    font-family: SF Pro Text;
+    font-family: "SF Pro Text";
     line-height: 60px;
 }
 .selector p {
@@ -192,8 +194,8 @@ img {
         left: 15px;
         top: 10%;
     }
-
 }
+/* ================== Section 3 ==================*/
 .product__top-row {
     display: flex;
 }
@@ -240,7 +242,7 @@ img {
 /* 選第二個 li */
 .product__top-content a {
     color: #AC8A46;
-    font-family: "Semibold";
+    font-family: "bold";
     text-decoration: none;
 }
 .product__long-content img {
@@ -255,7 +257,7 @@ img {
 }
 .product__long-content li {
     font-family: "SF Pro Text";
-    font-family: "Semibold";
+    font-weight: bold;
     margin-bottom: 0px;
     line-height: 24px;
     font-size: 16px;
@@ -272,6 +274,7 @@ img {
     border-radius: 30px;
     text-align: center;
     line-height: 60px;
+    font-weight: medium;
 }
 .product__long-content a {
     text-decoration: none;
@@ -306,7 +309,11 @@ img {
     .product__long-content img {
         height: 680px;
     }
+    .product__long-content ul > li:nth-last-child(1) {
+        width: 345px;
+    }
 }
+/* ================== Section 4 ==================*/
 .gray {
     background-color: #E0E0E0;
     padding-top: 40px;
@@ -321,6 +328,23 @@ img {
     /* TODO: 我有看到 29px 與 30px，要選哪一個？還是個別寫？ */
     margin-right: 30px;
 }
+.gallary__subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    line-height: 36px;
+    font-family: "SF Pro Text";
+}
+.gallary__content {
+    font-size: 16px;
+    font-weight: light;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.gallary span {
+    margin-left: 8px;
+    color: #8D8D8D;
+}
 @media(max-width: 768px){
     .gallary {
         flex-direction: column;
@@ -328,7 +352,16 @@ img {
     .gallary img {
         margin-right: 0;
     }
+    .gallary ul {
+        margin-bottom: 32px;
+    }
+    .gray {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 40px;
+    }
 }
+/* ================== Section 5 ==================*/
 .recycle {
     display: flex;
 }
@@ -336,6 +369,31 @@ img {
     width: 730px;
     height: 520px;
     margin-right: 30px;
+}
+.recycle__subtitle {
+    font-family: "SF Pro Text";
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+}
+.recycle__subtitle--li-style1 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+.recycle__subtitle--li-style2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "SF Pro Text";
+    font-weight: lighter;
+    margin-bottom: 16px;
+}
+.recycle a {
+    font-family: "蘋方-繁";
+    text-decoration: none;
+    color: #AC8A46;
+    font-size: 16px;
+    line-height: 24px;
 }
 @media(max-width: 768px){
     .recycle {
@@ -346,15 +404,93 @@ img {
         margin-right: 0px;
         margin-bottom: 8px;
     }
+    .recycle {
+        margin-bottom: 40px;
+    }
 }
+/* ================== Section 6 ==================*/
 .footer {
     background: url("images/index10.jpg") center center;
     height: 600px;
     background-size: cover;
     color: #8D8D8D;
+    padding-top: 312px;
+    /* padding-left: 405px; */
+}
+.footer li {
+    font-family: "蘋方-繁";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #8D8D8D;
+}
+.footer--li-style1  {
+    margin-bottom: 20px;
+}
+.footer--li-style2  {
+    display: flex;
+}
+.footer input {
+    border: 2px solid #916000;
+    width: 220px;
+    height: 60px;
+    border-radius: 4px 0px 0px 4px;
+    text-align: center;
+    line-height: 19px;
+    
+}
+.footer a {
+    display: block;
+    width: 131px;
+    height: 60px;
+    font-size: 16px;
+    background-color: #916000;
+    color: #fff;
+    border: 2px solid #916000;
+    border-radius: 0px 4px 4px 0px;
+    text-align: center;
+    vertical-align: center;
+    /* margin: 0 auto; */
 }
 .brown {
     height: 80px;
     background-color: #916000;
     margin-bottom: 0;
+}
+
+.brown-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.brown-layout li {
+    line-height: 30px;
+}
+.brown--left {
+    display: flex;
+    align-items: center;
+}
+.brown--left p {
+    text-align: center;
+    color: #fff;
+}
+.brown--right ul {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.brown--right li {
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 36px;
+}
+@media(max-width: 768px){
+    .brown--right {
+        display: none;
+    }
+    .brown--left {
+        width: 375px;
+        justify-content: space-between;
+    }
 }
