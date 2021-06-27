@@ -167,7 +167,7 @@ img {
     text-align: center;
     /* line-height: 20px; */
     font-size: 12px;
-    font-style: SF Pro Text;
+    font-style: "SF Pro Text";
   }
   /* 其他欄位隱藏 */
   .m-none {
@@ -648,6 +648,36 @@ img {
   }
   .recycle {
     margin-bottom: 40px;
+  }
+}
+
+.brown-1 {
+  height: 52px !important;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu li {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "SF Pro Text";
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+  margin-right: 28px;
+}
+
+@media (max-width: 768px) {
+  .brown-1 {
+    display: none;
   }
 }
 /*# sourceMappingURL=all.css.map */
