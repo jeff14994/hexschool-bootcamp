@@ -167,7 +167,6 @@ img {
     text-align: center;
     /* line-height: 20px; */
     font-size: 12px;
-    font-style: "SF Pro Text";
   }
   /* 其他欄位隱藏 */
   .m-none {
@@ -651,11 +650,13 @@ img {
   }
 }
 
+/* ================== Section 2 ==================*/
 .brown-1 {
   height: 52px !important;
+  margin-bottom: 80px;
 }
 
-.menu ul {
+.brown-1 .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +666,7 @@ img {
           align-items: center;
 }
 
-.menu li {
+.brown-1 .menu li {
   font-size: 20px;
   line-height: 30px;
   font-family: "SF Pro Text";
@@ -675,9 +676,83 @@ img {
   margin-right: 28px;
 }
 
+/* ================== Section 3 ==================*/
+.product-top-row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-top-row-1 .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-top-row-1 img {
+  display: block;
+  height: 255px !important;
+  width: 255px !important;
+  margin-right: 30px;
+}
+
+.product-top-row-1 ul {
+  margin-bottom: 58px;
+}
+
+.product-top-row-1 .list__subtitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-top-row-1 .list__link {
+  text-decoration: none;
+}
+
+.product-top-row-1 .list__link i {
+  text-decoration: none;
+  color: #916019;
+  width: 20px;
+  height: 18.35px;
+  margin-right: 8px;
+}
+
+.product-top-row-1 li {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 3px;
+}
+
+.product-top-row-1 span {
+  color: #8D8D8D;
+  margin-left: 8px;
+  text-decoration: line-through;
+}
+
 @media (max-width: 768px) {
   .brown-1 {
     display: none;
+  }
+  .product-top-row-1 {
+    width: 345px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .product-top-row-1 img {
+    height: 165px !important;
+    width: 165px !important;
+    margin-right: 0px;
+    margin-bottom: 2px;
+  }
+  .product-top-row-1 ul {
+    margin-bottom: 30.65px;
   }
 }
 /*# sourceMappingURL=all.css.map */
