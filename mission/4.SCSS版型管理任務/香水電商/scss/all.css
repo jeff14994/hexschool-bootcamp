@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,6 +48,12 @@ q:before, q:after {
   content: none;
 }
 
+/* 固定值響應式必寫語法 */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -57,8 +64,590 @@ img {
   height: auto;
 }
 
-/* Reset end */
-.omg {
-  color: red;
+/* 同時考慮電腦版與手機版的留白 */
+/* 使用 container 一同管理 => 用來居中 */
+.mb-2 {
+  margin-bottom: 16px !important;
+}
+
+.mb-7 {
+  margin-bottom: 60px !important;
+}
+
+.mb-52 {
+  margin-bottom: 52px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+
+.container {
+  /* 電腦版：555*2(image width) + 15*2(手機留白) */
+  max-width: 1140px;
+  /* 手機的左右留白 */
+  padding-right: 15px;
+  padding-left: 15px;
+  /* 元素水平居中 */
+  margin: 0 auto;
+  /* border: 1px solid #000;; */
+}
+
+/* ================== Section 1 ==================*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 56px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* 電腦版時 em 消失 */
+.header .menu em {
+  display: none;
+}
+
+.header .menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  position: relative;
+  text-decoration: none;
+  color: #8D8D8D;
+  font-size: 20px;
+}
+
+.header .menu i {
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  margin-right: 3px;
+  /* align-items: center; */
+}
+
+.header .menu span {
+  display: block;
+}
+
+.m-display {
+  display: none;
+}
+
+/* 手機版時 em 出現 */
+@media (max-width: 768px) {
+  .header .menu span {
+    display: none;
+  }
+  .header .menu em {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: #fff;
+    border-radius: 7px;
+    width: 16px;
+    height: 13px;
+    text-align: center;
+    /* line-height: 20px; */
+    font-size: 12px;
+    font-style: SF Pro Text;
+  }
+  /* 其他欄位隱藏 */
+  .m-none {
+    display: none;
+  }
+  .m-display {
+    display: block;
+  }
+}
+
+/* ================== Section 6 ==================*/
+.footer {
+  background: url("../images/index10.jpg") center center;
+  height: 600px;
+  background-size: cover;
+  color: #8D8D8D;
+  padding-top: 312px;
+  /* padding-left: 405px; */
+}
+
+.footer li {
+  font-family: "蘋方-繁";
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #8D8D8D;
+}
+
+.footer--li-style1 {
+  margin-bottom: 20px;
+}
+
+.footer--li-style2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer input {
+  border: 2px solid #916000;
+  width: 220px;
+  height: 60px;
+  border-radius: 4px 0px 0px 4px;
+  text-align: center;
+  line-height: 19px;
+}
+
+.footer a {
+  display: block;
+  width: 131px;
+  height: 60px;
+  font-size: 16px;
+  background-color: #916000;
+  color: #fff;
+  border: 2px solid #916000;
+  border-radius: 0px 4px 4px 0px;
+  text-align: center;
+  /* vertical-align: center; */
+  /* margin: 0 auto; */
+}
+
+.brown {
+  height: 80px;
+  background-color: #916000;
+  margin-bottom: 0;
+}
+
+.brown-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.brown-layout li {
+  line-height: 30px;
+}
+
+.brown--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brown--left p {
+  text-align: center;
+  color: #fff;
+}
+
+.brown--right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.brown--right li {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin-right: 36px;
+}
+
+@media (max-width: 768px) {
+  .brown--right {
+    display: none;
+  }
+  .brown--left {
+    width: 375px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/* ================== Section 2 ==================*/
+.banner {
+  position: relative;
+  /* max-width: 1920px; */
+  background: url(../images/index1.jpg);
+  /* 不要寫死高度 */
+  /* 100vh - 56px 的 -56px 代表減掉 header 的 height */
+  /* 100vh 代表目前畫面視角 */
+  /* calc() 幫你計算螢幕解析度 */
+  height: calc(100vh - 56px);
+  background-size: cover;
+  background-position: center center;
+}
+
+.selector {
+  position: absolute;
+  width: 445px;
+  top: 37%;
+  right: 10%;
+  /* left: 1070px;
+    top: 295px; */
+}
+
+.selector h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "SF Pro Text";
+  line-height: 60px;
+}
+
+.selector p {
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+  font-family: SF Pro Text;
+  line-height: 36px;
+}
+
+.selector a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  border-radius: 30px;
+  /* padding-top: 15px; */
+}
+
+.selector a p {
+  margin: auto auto;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 480px;
+    background-size: cover;
+  }
+  /* TODO: 如何設定 position 的位置？ */
+  .selector {
+    width: 345px;
+    left: 15px;
+    top: 10%;
+  }
+}
+
+/* ================== Section 3 ==================*/
+.product__top {
+  margin-bottom: 40px;
+}
+
+.product__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__top--row-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.product__top-img {
+  /* 使圖片距離為 0 */
+  font-size: 0;
+}
+
+.product__top-img img {
+  width: 555px;
+  height: 555px;
+}
+
+.product__top-content {
+  width: 555px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* align-items: center; */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.product__top-content h2 {
+  width: 350px;
+  font-size: 32px;
+  font-family: "SF Pro Text";
+  margin: 0 auto;
+  text-align: left;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.product__top-content ul {
+  width: 350px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.product__top-content li {
+  font-size: 20px;
+  font-family: "蘋方-繁";
+  font-weight: light;
+  margin-bottom: 16px;
+}
+
+/* 選第二個 li */
+.product__top-content a {
+  color: #AC8A46;
+  font-family: "bold";
+  text-decoration: none;
+}
+
+.product__long-content img {
+  height: 1080px;
+}
+
+.product__long-content ul {
+  height: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* border: 1px solid blue; */
+}
+
+.product__long-content li {
+  font-family: "SF Pro Text";
+  font-weight: bold;
+  margin-bottom: 0px;
+  line-height: 24px;
+  font-size: 16px;
+  /* border: 1px solid #000; */
+}
+
+.product__long-content ul > li:nth-child(odd) {
+  font-weight: bold;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+.product__long-content ul > li:nth-last-child(1) {
+  height: 60px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: medium;
+}
+
+.product__long-content a {
+  text-decoration: none;
+  color: #000;
+  margin: 18px auto;
+  /* 父層要設定 line-hight 才有辦法使用 vertical-align */
+  vertical-align: inherit;
+}
+
+@media (max-width: 768px) {
+  .product__top {
+    margin-bottom: 0;
+  }
+  .product__top--row-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* 設定寬度 */
+  .product__top-content {
+    width: 345px;
+  }
+  .product__top-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__top-content {
+    padding-top: 8px;
+    /* border: 1px solid #000; */
+  }
+  .product__top-img img {
+    height: 350px;
+    padding-top: 16px;
+  }
+  .product__top-content li {
+    margin-bottom: 8px;
+    /* border: 1px solid #000; */
+  }
+  .product__long-content img {
+    height: 680px;
+  }
+  .product__long-content ul > li:nth-last-child(1) {
+    width: 345px;
+  }
+}
+
+/* ================== Section 4 ==================*/
+.gray {
+  background-color: #E0E0E0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.gallary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallary img {
+  width: 350px;
+  height: 540px;
+  /* TODO: 我有看到 29px 與 30px，要選哪一個？還是個別寫？ */
+  margin-right: 30px;
+}
+
+.gallary__subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  line-height: 36px;
+  font-family: "SF Pro Text";
+}
+
+.gallary__content {
+  font-size: 16px;
+  font-weight: light;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.gallary span {
+  margin-left: 8px;
+  color: #8D8D8D;
+}
+
+@media (max-width: 768px) {
+  .gallary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallary img {
+    margin-right: 0;
+  }
+  .gallary ul {
+    margin-bottom: 32px;
+  }
+  .gray {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+}
+
+/* ================== Section 5 ==================*/
+.recycle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.recycle img {
+  width: 730px;
+  height: 520px;
+  margin-right: 30px;
+}
+
+.recycle__subtitle {
+  font-family: "SF Pro Text";
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.recycle__subtitle--li-style1 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+.recycle__subtitle--li-style2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "SF Pro Text";
+  font-weight: lighter;
+  margin-bottom: 16px;
+}
+
+.recycle a {
+  font-family: "蘋方-繁";
+  text-decoration: none;
+  color: #AC8A46;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .recycle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .recycle img {
+    width: 345px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+  }
+  .recycle {
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

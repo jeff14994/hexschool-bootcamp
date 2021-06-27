@@ -1,0 +1,86 @@
+/* ================== Section 6 ==================*/
+.footer {
+    background: url("../images/index10.jpg") center center;
+    height: 600px;
+    background-size: cover;
+    color: #8D8D8D;
+    padding-top: 312px;
+    /* padding-left: 405px; */
+}
+.footer li {
+    font-family: "蘋方-繁";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #8D8D8D;
+}
+.footer--li-style1  {
+    margin-bottom: 20px;
+}
+.footer--li-style2  {
+    display: flex;
+}
+.footer input {
+    border: 2px solid #916000;
+    width: 220px;
+    height: 60px;
+    border-radius: 4px 0px 0px 4px;
+    text-align: center;
+    line-height: 19px;
+    
+}
+.footer a {
+    display: block;
+    width: 131px;
+    height: 60px;
+    font-size: 16px;
+    background-color: #916000;
+    color: #fff;
+    border: 2px solid #916000;
+    border-radius: 0px 4px 4px 0px;
+    text-align: center;
+    /* vertical-align: center; */
+    /* margin: 0 auto; */
+}
+.brown {
+    height: 80px;
+    background-color: #916000;
+    margin-bottom: 0;
+}
+
+.brown-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.brown-layout li {
+    line-height: 30px;
+}
+.brown--left {
+    display: flex;
+    align-items: center;
+}
+.brown--left p {
+    text-align: center;
+    color: #fff;
+}
+.brown--right ul {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.brown--right li {
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 36px;
+}
+@media(max-width: 768px){
+    .brown--right {
+        display: none;
+    }
+    .brown--left {
+        width: 375px;
+        justify-content: space-between;
+    }
+}

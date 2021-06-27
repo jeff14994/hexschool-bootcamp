@@ -1,6 +1,20 @@
-// 可不加下底線
-@import "reset";
-@import "variables";
-@import "base";
-@import "home";
-@import "desktop"
+// 2021.06.23 直播筆記
+// @import "xx": xx可不加下底線
+// reset: 瀏覽器清空
+// base: 專屬網站客製化用的全站設定
+// 可以新增 layout: footer, header
+// 可以新增 util: 工具類
+// 可以新增 vendors: 外部套件
+// 可以新增 component: e.g. button, card, pagination
+// 目標：不要有 pages, layout: 可否用 component 或 util 組出想要的畫面？
+// base
+@import "base/reset";
+@import "base/variables";
+@import "base/base";
+@import "base/utils";
+// layout
+@import "layout/header";
+@import "layout/footer";
+// pages: 目標：越少越好（e.g. <50 lines）
+@import "pages/home";
+@import "pages/desktop"

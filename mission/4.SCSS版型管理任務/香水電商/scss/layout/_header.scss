@@ -1,0 +1,65 @@
+/* ================== Section 1 ==================*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+}
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+/* 電腦版時 em 消失 */
+.header .menu em {
+    display: none;
+}
+.header .menu a {
+    display: flex;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+    color: #8D8D8D;
+    font-size: 20px;
+}
+.header .menu i {
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    margin-right: 3px;
+    /* align-items: center; */
+}
+.header .menu span {
+    display: block;
+}
+.m-display {
+    display: none;
+}
+/* 手機版時 em 出現 */
+@media(max-width: 768px){
+    .header .menu span {
+        display: none;
+    }
+    .header .menu em {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: red;
+        color: #fff;
+        border-radius: 7px;
+        width: 16px;
+        height: 13px;
+        text-align: center;
+        /* line-height: 20px; */
+        font-size: 12px;
+        font-style: SF Pro Text;
+    }
+    /* 其他欄位隱藏 */
+    .m-none {
+        display: none;
+    }
+    .m-display {
+        display: block;
+    }
+}

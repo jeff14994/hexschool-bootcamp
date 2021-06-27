@@ -1,0 +1,24 @@
+/* 同時考慮電腦版與手機版的留白 */
+/* 使用 container 一同管理 => 用來居中 */
+.mb-2 {
+    margin-bottom: 16px !important;
+}
+.mb-7 {
+    margin-bottom: 60px !important;
+}
+.mb-52 {
+    margin-bottom: 52px !important;
+}
+.mb-60 {
+    margin-bottom: 60px !important;
+}
+.container {
+    /* 電腦版：555*2(image width) + 15*2(手機留白) */
+    max-width: 1140px;
+    /* 手機的左右留白 */
+    padding-right: 15px;
+    padding-left: 15px;
+    /* 元素水平居中 */
+    margin: 0 auto;
+    /* border: 1px solid #000;; */
+}
