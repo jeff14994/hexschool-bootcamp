@@ -107,7 +107,9 @@ img {
 .header .menu span {
     display: block;
 }
-
+.m-display {
+    display: none;
+}
 /* 手機版時 em 出現 */
 @media(max-width: 768px){
     .header .menu span {
@@ -131,6 +133,9 @@ img {
     /* 其他欄位隱藏 */
     .m-none {
         display: none;
+    }
+    .m-display {
+        display: block;
     }
 }
 /* ================== Section 2 ==================*/
