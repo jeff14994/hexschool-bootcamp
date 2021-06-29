@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>充電站</title>
+</head>
+<body>
+    <!--  新增充電站 UI 介面邏輯新增 -->
+    <!-- 新增資料 -->
+    <h2>新增資料</h2>
+    <input type="text" placeholder="充電站名稱" class="stationName">
+    <!-- <input type="text" placeholder="免費、付費" class="stationCharge"> -->
+    <select class="stationCharge">
+        <option value="免費">免費</option>
+        <option value="投幣式">投幣式</option>
+    </select>
+    <input type="button" class="btn" value="儲存">
+    <!-- 資料顯示 -->
+    <h2>資料顯示</h2>
+    <!-- 選擇按鈕 -->
+    <div class="filter">
+        <input type="button" value="全部">
+        <input type="button" value="免費">
+        <input type="button" value="投幣式">
+    </div>
+    <!-- 顯示畫面 -->
+    <ul class="list">
+
+    </ul>
+    <script src="all.js"></script>
+</body>
+</html>
