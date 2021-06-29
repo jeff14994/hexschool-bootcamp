@@ -65,10 +65,10 @@ list.addEventListener('click', (e) => {
         // Add Class name
         content.setAttribute('class', 'content cross-line');
         // TODO: How to remember completed todolist?
-        console.log(content);
-        console.log(num);
+        // console.log(content);
+        // console.log(num);
         // 重新刷新資料
-        renderData();
+        // renderData();
     }
 })
 renderData();
