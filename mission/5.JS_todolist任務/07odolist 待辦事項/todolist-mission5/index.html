@@ -12,7 +12,27 @@
     <div class="bg-yellow">
         <div class="container main">
             <h1> TODO LIST</h1>
-            <input type="text" placeholder="新增代辦事項" class="addNewTodo">
+            <div class="input-column">
+                <input type="text" placeholder="新增代辦事項" class="addNewTodo">
+                <a href="#" class="btn__add">+</a>
+            </div>
+            <div class="menu">
+                    <ul class="tab">
+                        <li class="active">全部</li>
+                        <li>待完成</li>
+                        <li>已完成</li>
+                    </ul>
+                    <ul class="list">
+                        <li>
+                            <label class="checkbox" for="">
+                                <input type="checkbox" data-num="1"/>
+                                <span>Omg</span>
+                            </label>
+                            <a href="#" class="delete" data-num="1">Delete</a>
+                        </li>
+                    </ul>
+            </div>
+            
         </div>
     </div>
     
