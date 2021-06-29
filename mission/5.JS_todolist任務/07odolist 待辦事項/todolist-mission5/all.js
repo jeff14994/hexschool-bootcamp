@@ -1,6 +1,7 @@
 const list = document.querySelector('.list');
 const txt = document.querySelector('.addNewTodo');
 const save = document.querySelector('.btn__add');
+const content = document.querySelector('.content')
 let data = [
     {
         'content': '代辦事項',
@@ -17,8 +18,8 @@ function renderData() {
     data.forEach((item, index) => {
         str += `<li>
         <label class="checkbox" for="">
-            <input type="checkbox" data-num="${index}"/>
-            <span>${item.content}</span>
+            <input type="checkbox" class="checked" data-num="${index}"/>
+            <span class="content">${item.content}</span>
         </label>
         <a href="#" class="delete" data-num="${index}">Delete</a>
     </li>`
@@ -57,10 +58,15 @@ list.addEventListener('click', (e) => {
 // 完成清單
 list.addEventListener('click', (e) => {
     let target = e.target
-    if (target.getAttribute('class') === 'checkbox') {
-        //  取出完成的資料
-        target.setAttribute('completed', 'true');
-        console.log(target);
+    // console.log(target);
+    if (target.getAttribute('class') === 'checked') {
+        // 取出完成的資料
+        let num = target.getAttribute('data-num');
+        // Add Class name
+        content.setAttribute('class', 'content cross-line');
+        // TODO: How to remember completed todolist?
+        console.log(content);
+        console.log(num);
         // 重新刷新資料
         renderData();
     }
