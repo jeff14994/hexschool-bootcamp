@@ -78,6 +78,8 @@
 .product__top-img img {
     width: 555px;
     height: 555px;
+    object-fit: cover;
+    // object-position: center;
 }
 .product__top-content {
     width: 555px;
@@ -172,6 +174,7 @@
     .product__top-img img {
         height: 350px;
         padding-top: 16px;
+        object-fit: cover;
     }
     .product__top-content li {
         margin-bottom: 8px;
@@ -198,6 +201,8 @@
     height: 540px;
     /* TODO: 我有看到 29px 與 30px，要選哪一個？還是個別寫？ */
     margin-right: 30px;
+    object-fit: cover;
+    object-position: center;
 }
 .gallary__subtitle {
     font-size: 24px;
@@ -241,6 +246,7 @@
     width: 730px;
     height: 520px;
     margin-right: 30px;
+    object-fit: cover;
 }
 .recycle__subtitle {
     font-family: "SF Pro Text";
@@ -276,6 +282,7 @@
         width: 345px;
         margin-right: 0px;
         margin-bottom: 8px;
+        object-fit: cover;
     }
     .recycle {
         margin-bottom: 40px;
